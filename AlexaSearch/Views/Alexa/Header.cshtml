@@ -1,0 +1,10 @@
+	
+		@{
+    var item = Sitecore.Context.Database.GetItem("/sitecore/content/Home/Alexa/websiteSettings/localsetting");
+    //var item = Sitecore.Context.Database.GetItem("{{{{77AB5F36-B857-4845-B5B4-C044E0EA7F9B}}}");
+}
+	
+    <div>
+        
+         @Html.Raw( item.Fields["websiteheading"].Value)
+    </div>
